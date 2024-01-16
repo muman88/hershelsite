@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+   <div class="wrapper">
+       <div class="words">
+           <span>Developing</span>
+           <span>Designing</span>
+           <span>Editing</span>
+           <span>Creating</span>
+           <span>Developing</span>
+       </div>
+   </div>
+
+<style>
+    *,
+*:before,
+*:after{
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.wrapper{
+    box-sizing: content-box;
+    height: 127px;
+    padding: 10px;
+    display: flex;
+    border-radius: 8px;
+
+}
+.words{
+    overflow: hidden;
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 20px;
+    color: #fff;
+    animation: spin_words 8s infinite;
+    font-size: 96px;
+    font-weight: 700;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+</style>
+

@@ -1,8 +1,31 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro';
+import Words from './words.astro';
+import Nav from '../components/Nav.astro'; // Import the Nav component
+
 ---
 
 <HomeLayout>
-    
-
+  <Nav/>
+    <main class="min-h-screen flex items-center justify-center">
+        <div class="flex items-center justify-center">
+            <div class="rounded-full w-72 h-72 bg-center bg-cover" style="background-image: url('/laytoncoffee.jpeg');"></div>
+            <div class="flex flex-col ml-8">
+                <Words/>
+                <p class="text-7xl font-bold ml-9 ">for fun.</p>
+            </div>
+        </div>
+    </main>    
+    <div class="absolute flex bottom-0 justify-center w-full mb-20 text-lg gap-10">
+        <button class="ring-2 ring-neutral-500 text-neutral-500 px-7 py-2 rounded-full flex hover:bg-neutral-500 hover:text-white"><svg class="mr-2" data-testid="geist-icon" fill="none"  shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="10 10" style="color:var(--geist-foreground);width:24px;height:24px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Github</button>
+        <button class="ring-2 ring-neutral-500 text-neutral-500 px-7 py-2 rounded-full flex hover:bg-neutral-500 hover:text-white"><svg class="mr-2 mt-1" data-testid="geist-icon" fill="none"  shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="10 10" width="1" height="1" style="color:var(--geist-foreground);width:24px;height:24px"><path fill="var(--geist-fill, currentColor)" stroke="none" d="M16.99 0H20.298L13.071 8.26L21.573 19.5H14.916L9.702 12.683L3.736 19.5H0.426L8.156 10.665L0 0H6.826L11.539 6.231L16.99 0ZM15.829 17.52H17.662L5.83 1.876H3.863L15.829 17.52Z"/></svg>Twitter</button>
+    </div>
 </HomeLayout>
+
+
+<style>
+  a:is (:active, :link, :visited) {
+    background-color: #fff;
+    color: #000;
+  }
+</style>
