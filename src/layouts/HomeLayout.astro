@@ -20,14 +20,24 @@
   --text-color-light: #1A1A1A;
   --background-color-dark: #1A1A1A;
   --text-color-dark: #ffffff;
-  --secondary-dark: #363636;
+  --secondary-back-dark: #363636;
   --secondary-light: #ffffff;
+  --button-color: #B9B9B9;
 }
 
 nav {
-  background-color: var(--secondary-dark);
-  color: var(--text-color-dark);
+  background-color: var(--secondary-light);
+  color: var(--text-color-light);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#icon{
+    background-color: #B9B9B9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.span {
+  color: var(--text-color-light);
 }
 
 body {
@@ -41,11 +51,17 @@ body {
     color: var(--text-color-dark);
   }
   nav {
-  background-color: var(--secondary-dark);
-  color: var(--text-color-dark);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}   
-  
+    background-color: var(--secondary-back-dark);
+    color: var(--text-color-dark);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }    
+  .span {
+    color: var(--text-color-dark);
+  }
+  #icon{
+        background-color: #4B4A4A;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    }
 }
 
 </style>
